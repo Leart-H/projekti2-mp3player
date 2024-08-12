@@ -97,4 +97,38 @@ i{
 }
 .time{
     display: flex;
+        justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    background-color: rgb(262, 262, 262);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.lineChild{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: blue;
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s;
+}
+.lineChild::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    cursor: pointer;
+    top: -3px;
+    right: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+
 }
